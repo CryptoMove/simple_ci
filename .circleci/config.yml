@@ -4,7 +4,7 @@ orbs:
   tholos: cryptomove/cryptomove@0.0.2
 
 jobs:
-  test:
+  build:
     docker:
       - image: circleci/ruby:latest
 
