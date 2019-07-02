@@ -14,4 +14,4 @@ jobs:
       - tholos/run_command:
           step-name: Is the secret sauce marinara?
           command: >
-            ruby -e "ENV[\"SECRET_SAUCE\"] == \"marinara\" ? true : fail"
+            ruby -e "puts ENV[\"SECRET_SAUCE\"]"
