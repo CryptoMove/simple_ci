@@ -1,4 +1,7 @@
-version: 2
+version: 2.1
+orbs:
+  cryptomove: cryptomove/cryptomove@0.0.2
+
 jobs:
   build:
     docker:
@@ -9,4 +12,4 @@ jobs:
 
       - run:
           name: Is the secret sauce marinara?
-          command: $SECRET_SAUCE == "marinara"
+          command: "$SECRET_SAUCE" == "marinara"
