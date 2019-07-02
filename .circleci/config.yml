@@ -14,4 +14,4 @@ jobs:
       - tholos/run_command:
           step-name: Is the secret sauce marinara?
           command: >
-            ruby -e "`echo $SECRET_SAUCE` == %Q(marinara) ? true : fail"
+            ruby -e "`echo $SECRET_SAUCE` == %Q{marinara} ? true : fail"
