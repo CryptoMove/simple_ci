@@ -8,5 +8,5 @@ jobs:
       - checkout
 
       - run:
-          name: Greeting
-          command: '[[$(printenv $SECRET_SAUCE) -eq "rar"]]'
+          name: Is the secret sauce marinara?
+          command: $(printenv $SECRET_SAUCE) -eq "marinara"
