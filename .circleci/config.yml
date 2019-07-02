@@ -3,11 +3,11 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: circleci/ruby:latest
 
     steps:
       - checkout
 
       - run:
           name: Is the secret sauce marinara?
-          command: 'if [["$SECRET_SAUCE" = "marinara"]]; then exit 0; else exit 1; fi'
+          command: ruby ./test.rb
