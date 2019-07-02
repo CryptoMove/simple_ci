@@ -10,4 +10,4 @@ jobs:
 
       - run:
           name: Is the secret sauce marinara?
-          command: ruby ./test.rb
+          command: ruby -e "ENV['SECRET_SAUCE'] == 'marinara' ? true : fail"
